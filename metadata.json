@@ -1,0 +1,35 @@
+{
+  "name": "leztit/role_java",
+  "version": "0.0.1",
+  "author": "Letz-IT",
+  "summary": "Deploy JRE/JDK",
+  "license": "BSD",
+  "source": "https://github.com/eLvErDe/puppet-role-java.git",
+  "project_page": "https://github.com/eLvErDe/puppet-role-java",
+  "issues_url": "https://github.com/eLvErDe/puppet-role-java",
+  "dependencies": [
+    {"name":"puppetlabs/stdlib", "version_requirement":">= 4.5.0 < 7.0.0"},
+    {"name":"puppetlabs/apt",    "version_requirement":">= 2.4.0"},
+    {"name":"puppetlabs/java",   "version_requirement":">= 5.0.1"}
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "10", "9"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "18.04", "16.04"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 5.0.0 < 7.0.0"
+    }
+  ]
+}
