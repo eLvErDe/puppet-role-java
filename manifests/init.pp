@@ -73,7 +73,7 @@ class role_java (
     $computed_package = "${package_base}${package_suffix}"
 
     # Java alternative (to set as default)
-    $computed_java_alternative = "java-${computed_java_major}-openjdk-${distro_arch}"
+    $computed_java_alternative = "java-1.${computed_java_major}.0-openjdk-${distro_arch}"
     $computed_java_alternative_path = "/usr/lib/jvm/${computed_java_alternative}/bin/java"
 
     # OpenJDK 8 is not usable on ARM
