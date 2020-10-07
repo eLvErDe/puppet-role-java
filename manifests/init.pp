@@ -23,7 +23,7 @@ class role_java (
   #$distro_lowercase = downcase($::facts['os']['distro']['id'])
   #$distro_majorver = $::facts['os']['release']['major']
   #$distro_arch = $::facts['os']['architecture']
-  $distro_lowercase = $::operatingsystem
+  $distro_lowercase = downcase($::operatingsystem)
   $distro_majorver = $::operatingsystemmajrelease
   $distro_arch = $::architecture
 
