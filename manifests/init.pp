@@ -108,7 +108,7 @@ class role_java (
         package               => 'oracle-java8-installer',
         version               => '8u211+1~levert1',
         java_alternative      => 'java-8-oracle',
-        java_alternative_path => '/usr/lib/jvm/java-8-oracle/bin/java',
+        java_alternative_path => '/usr/lib/jvm/java-8-oracle/jre/bin/java',
         require               => [File['oracle-8-jdk-cache-tarball'], Exec['debconf-accept-oracle-8-jdk-license']],
       }
 
